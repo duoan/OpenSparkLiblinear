@@ -1,15 +1,15 @@
 package tw.edu.ntu.csie.liblinear
 
+import org.apache.spark.SparkException
 import org.apache.spark.mllib.linalg.{DenseVector, SparseVector, Vector}
 import org.apache.spark.mllib.regression.LabeledPoint
-import org.apache.spark.SparkException
 
 
 /**
   * DataPoint represents a sparse data point with label.
   *
   * @param value features represented in an Array of Feature
-  * @param y label
+  * @param y     label
   */
 class DataPoint(val index: Array[Int], val value: Array[Double], val y: Double) extends Serializable {
   def getMaxIndex(): Int = {

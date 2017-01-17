@@ -1,12 +1,12 @@
 package tw.edu.ntu.csie.liblinear
 
-import scala.math.exp
-import scala.util.control.Breaks._
 import breeze.linalg.DenseVector
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.rdd.RDD
-import org.apache.spark.SparkContext
 import tw.edu.ntu.csie.liblinear.rdd.RDDFunctions._
+
+import scala.math.exp
+import scala.util.control.Breaks._
 
 /**
   * TronFunction defines necessary methods used for different optimization problems in TRON.

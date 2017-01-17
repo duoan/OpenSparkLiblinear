@@ -1,12 +1,8 @@
 package tw.edu.ntu.csie.liblinear
 
-import java.io.FileInputStream
-import java.io.FileOutputStream
-import java.io.ObjectInputStream
-import java.io.ObjectOutputStream
-import scala.Predef
-import org.apache.spark.mllib.classification.{LogisticRegressionModel, SVMModel}
-import org.apache.spark.mllib.linalg.{Vectors, Vector}
+import java.io.{FileInputStream, FileOutputStream, ObjectInputStream, ObjectOutputStream}
+
+import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.GeneralizedLinearModel
 import tw.edu.ntu.csie.liblinear.SolverType._
 

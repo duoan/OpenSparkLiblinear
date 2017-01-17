@@ -1,15 +1,14 @@
 package tw.edu.ntu.csie.liblinear
 
-import scala.math.{max, min}
-import scala.util.control.Breaks._
 import breeze.linalg.DenseVector
+import org.apache.spark.mllib.classification.{LogisticRegressionModel, SVMModel}
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.{GeneralizedLinearModel, LabeledPoint}
-import org.apache.spark.mllib.classification.{SVMModel, LogisticRegressionModel}
 import org.apache.spark.rdd.RDD
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkConf
 import tw.edu.ntu.csie.liblinear.SolverType._
+
+import scala.math.{max, min}
+import scala.util.control.Breaks._
 
 /**
   * The interface for training liblinear on Spark.

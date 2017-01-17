@@ -1,10 +1,10 @@
 package tw.edu.ntu.csie.liblinear.rdd
 
-import scala.language.implicitConversions
-import scala.reflect.ClassTag
 import org.apache.spark.HashPartitioner
 import org.apache.spark.rdd.RDD
-import org.apache.spark.SparkContext
+
+import scala.language.implicitConversions
+import scala.reflect.ClassTag
 
 /**
   * Spark LIBLINEAR specific RDD functions.
